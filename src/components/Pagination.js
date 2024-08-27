@@ -1,8 +1,7 @@
 import React from 'react';
 
 const Pagination = ({ currentPage, totalResults, onPageChange }) => {
-  const itemsPerPage = 20;
-  const totalPages = Math.ceil(totalResults / itemsPerPage);
+  const totalPages = Math.ceil(totalResults / 20); // 20 films par page (gestion API)
   const pageNumbers = [];
 
   if (totalPages <= 6) {
